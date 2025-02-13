@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce website</title>
+
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Recipe</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Creations</a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="productdetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="images/products/ts.jpg" width="100%" id="MainImg" alt="">
+        </div>
+        <div class="single-pro-details">
+            <h4> Tongseng Sapi</h4>
+            <h2>Ingredients:</h2>
+
+            <span>
+                <p>400 gr beef</p>
+                <p>Cabbage (according to taste)</p>
+                <p>1 tomato</p>
+                <p>1 pack of coconut milk</p>
+                <p>7 cayenne peppers/devil chilies</p>
+                <p>8 red chilies</p>
+                <p>5 garlic</p>
+                <p>7 red onions</p>
+                <p>1 segment of turmeric</p>
+                <p>1 segment of ginger</p>
+                <p>1 galangal segment</p>
+                <p>2 candlenuts</p>
+                <p>1 tsp coriander</p>
+                <p>1/2 tsp pepper</p>
+                <p>2 bay leaves</p>
+                <p>1 stalk lemongrass</p>
+                <p>green onions</p>
+                <p>Salt</p>
+                <p>Sugar</p>
+                <p>Flavoring</p>
+                <p>Sweet soy sauce</p>
+                <p>Enough water</p>
+                <p>Cooking oil</p>
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="images/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> SMAN 10 DEPOK</p>
+            <p><strong>Phone:</strong> +62 895-3526-80143</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <a href="https://www.instagram.com/cauruus" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <a href="https://www.youtube.com/@esacaurus" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> | Created By Kelompok 6 |</p>
+        </div>
+    </footer>
+
+
+    <!-- javascript script file code -->
+    <script>
+        var mainImg = document.getElementById("MainImg");
+        var smallImg = document.getElementsByClassName("small-img");
+        smallImg[0].onclick = function () {
+            mainImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function () {
+            mainImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function () {
+            mainImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function () {
+            mainImg.src = smallImg[3].src;
+        }
+    </script>
+
+    <!-- javascript script file link -->
+    <script src="script.js"></script>
+</body>
+
+</html>

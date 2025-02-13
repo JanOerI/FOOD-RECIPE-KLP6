@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce website</title>
+
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Recipe</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Creations</a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="productdetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="images/products/ls.jpg" width="100%" id="MainImg" alt="">
+        </div>
+        <div class="single-pro-details">
+            <h4>Lumpia Semarang</h4>
+            <h2>Ingredients:</h2>
+            <h4>For the filling:</h4>
+            <span>
+                <p> 2 shallots, finely chopped </p>
+                <p> 3 garlic cloves, finely chopped</p>
+                <p> 2 spring onions, finely cut</p>
+                <p> 250g skinless shrimp, chopped</p>
+                <p> 150g/5oz boiled and chopped chicken fillet</p>
+                <p> A 350g can of crumbled bamboo </p>
+                <p> 1 scrambled egg</p>
+                <p> 1 teaspoon dried/soaked shrimp in hot water and chopped</p>
+                <p> 2 teaspoons sweet soy sauce </p>
+                <p> 1 teaspoon salt </p>
+                <p> 1/2 teaspoon pepper </p>
+                <p> 75ml water </p>
+                <p> Vegetable oil to fry spring rolls </p>
+
+                <h4>For the sauce</h4>
+                <p> 500ml water</p>
+                <p> 1 garlic cloves, crushed</p>
+                <p> 50g/2oz palm sugar, grated</p>
+                <p> 1/2 teaspoon salt</p>
+                <p> 1 teaspoon salted soy sauce</p>
+                <p> 6 teaspoons tapioca flour, dissolved in 1 tablespoon water</p>
+                <p> Sweet and sour sauce</p>
+                <p> 2 garlic cloves, finely chopped</p>
+                <p> 1 large red chillies, seeded, finely chopped</p>
+                <p> 1 teaspoon vinegar, 1 tablespoon sugar</p>
+                <p> 200 ml/7 liquid ounces water, 1/2 teaspoon salt</p>
+                <p> 1/2 teaspoon cornmeal, dissolved in 1 tablespoon water</p>
+        </div>
+        <footer class="section-p1">
+            <div class="col">
+                <img class="logo" src="images/logo.png" alt="">
+                <h4>Contact</h4>
+                <p><strong>Address:</strong> SMAN 10 DEPOK</p>
+                <p><strong>Phone:</strong> +62 895-3526-80143</p>
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <a href="https://www.instagram.com/cauruus" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <a href="https://www.youtube.com/@esacaurus" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p> | Created By Kelompok 6 |</p>
+            </div>
+        </footer>
+
+
+    </section>
+
+    <!-- javascript script file code -->
+    <script>
+        var mainImg = document.getElementById("MainImg");
+        var smallImg = document.getElementsByClassName("small-img");
+        smallImg[0].onclick = function () {
+            mainImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function () {
+            mainImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function () {
+            mainImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function () {
+            mainImg.src = smallImg[3].src;
+        }
+    </script>
+
+    <!-- javascript script file link -->
+    <script src="script.js"></script>
+</body>
+
+</html>

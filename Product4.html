@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce website</title>
+
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Recipe</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Creations</a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="productdetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="images/products/rs.jpg" width="100%" id="MainImg" alt="">
+        </div>
+        <div class="single-pro-details">
+            <h4>Rendang</h4>
+            <h4>Ingredients:</h4>
+            <ul>
+                <li>500g beef, cut into 5x5 cm chunks</li>
+                <li>1 turmeric leaf (or 2 Indonesian bay leaves)</li>
+                <li>15g tamarind</li>
+                <li>750 ml coconut milk containing 24% fat</li>
+                <li>2 stalks of lemongrass</li>
+                <li>4 lime leaves</li>
+            </ul>
+
+            <h4>Spices:</h4>
+            <ul>
+                <li>120g onions, chopped</li>
+                <li>20g garlic, chopped</li>
+                <li>125g chili, chopped and deseeded</li>
+                <li>10g ginger, chopped</li>
+                <li>30g galangal, chopped</li>
+                <li>20g candlenut, pureed</li>
+            </ul>
+            <span>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li>Pulse all the spices in a blender. Add lime leaves, lemongrass, and tamarind.</li>
+                    <li>Add coconut milk. Stir fry till it becomes oily and turns brown.</li>
+                    <li>Add the beef and stir.</li>
+                    <li>Preheat the oven at 120°. Put all the ingredients in a bowl and cook them in the oven.</li>
+                    <li>Cook for about 1.5 to 2 hours so that the beef becomes tender.</li>
+                    <li>Shift the beef into a pan. Cook on a low flame and keep stirring till the color changes to dark
+                        brown and the beef becomes ultra-tender.</li>
+                </ol>
+            </span>
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="images/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> SMAN 10 DEPOK</p>
+            <p><strong>Phone:</strong> +62 895-3526-80143</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <a href="https://www.instagram.com/cauruus" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <a href="https://www.youtube.com/@esacaurus" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> | Created By Kelompok 6 |</p>
+        </div>
+    </footer>
+
+
+    <!-- javascript script file code -->
+    <script>
+        var mainImg = document.getElementById("MainImg");
+        var smallImg = document.getElementsByClassName("small-img");
+        smallImg[0].onclick = function () {
+            mainImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function () {
+            mainImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function () {
+            mainImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function () {
+            mainImg.src = smallImg[3].src;
+        }
+    </script>
+
+    <!-- javascript script file link -->
+    <script src="script.js"></script>
+</body>
+
+</html>

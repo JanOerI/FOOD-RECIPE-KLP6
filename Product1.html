@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce website</title>
+
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Recipe</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Creations</a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="productdetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="images/products/rw.jpg" width="100%" id="MainImg" alt="">
+        </div>
+        <div class="single-pro-details">
+            <h4>Rawon</h4>
+            <h4>Main Ingredients:</h4>
+            <span>
+                <ul>
+                    <li>500 g beef brisket</li>
+                    <li>1 cow’s knee, halved into 2</li>
+                    <li>3 fresh kaffir lime leaves</li>
+                    <li>1 lemongrass stalk, bruised</li>
+                    <li>1 tsp of tamarind water</li>
+                    <li>2 spring onions, sliced 1 cm</li>
+                    <li>1 tbsp of Royco Beef Broth</li>
+                    <li>1 tsp of salt</li>
+                    <li>3 litres of water</li>
+                    <li>5 tbsp of cooking oil</li>
+                </ul>
+            </span>
+            <h4>Ground spices:</h4>
+            <span>
+                <ul>
+                    <li>4 cloves of garlic</li>
+                    <li>8 red onions</li>
+                    <li>5 fruits of kluwak, smashed, and soak into hot water</li>
+                    <li>4 hazelnut grains, roasted</li>
+                    <li>1 cm turmeric, burn</li>
+                </ul>
+            </span>
+            <h4>Complement ingredients:</h4>
+            <span>
+                <ul>
+                    <li>Short sprouts</li>
+                    <li>Salted egg</li>
+                    <li>Cayenne pepper</li>
+                    <li>Chips</li>
+                    <li>Lime</li>
+                </ul>
+            </span>
+            <h4>How To Make:</h4>
+            <span>
+                <ol>
+                    <li>Prepare the ingredients above, and the main ingredient is kluwak.</li>
+                    <li>First, the kluwak need to be crushed, and the meat of kluwak is taken out from its shell. The
+                        meat of this kluwak has a dark brown colour. You don’t have to worry because it will turn black
+                        when cooked later.</li>
+                    <li>The kluwak is removed and then put into a grinder. After the kluwek is mashed, then you can
+                        drain the kluwek first.</li>
+                    <li>After that, take the prepared ground spices, then put them in a blender. Don’t forget to slice
+                        the candlenut first to make it easier for the blender to soften it. If it is not sliced, usually
+                        the candlenut will be left with a small round shape in the seasoning.</li>
+                    <li>After that, put in the kluwek and ground spices mashed into a cooking pot and cook until the
+                        aroma is fragrant.</li>
+                    <li>Once it is a little fragrant, the next step is to add dry spices in the form of lemongrass,
+                        ginger galangal, and leaves.</li>
+                    <li>It would help if you cooked the spices until they were fully cooked. Therefore, you will need
+                        medium heat.</li>
+                    <li>After that, you can cook the spices for about 10 minutes. The goal is that the herbs are cooked
+                        to the maximum and avoid unpleasant aromas. The unpleasant aroma can make your rawon less
+                        delicious when consumed.</li>
+                    <li>After the aroma gets more substantial, the next step is to add water. The water needed for
+                        cooking this rawon is about 1.5 litres.</li>
+                    <li>After the water is mixed with the spices, add the diced meat.</li>
+                    <li>Add the remaining dry spices and cook until done.</li>
+                    <li>To cook rawon above until thoroughly cooked, you need a long time. However, if you want the
+                        rawon to cook quickly, you can use a pressure cooker.</li>
+                    <li>The goal is that the meat is tender which is the hallmark of rawon vegetables.If you are cooking
+                        in a pressure cooker, it will only take 45 minutes to make sure the meat is tender and the oil
+                        comes out. This method will make your rawon dish delicious and tasty.</li>
+                </ol>
+            </span>
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="images/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> SMAN 10 DEPOK</p>
+            <p><strong>Phone:</strong> +62 895-3526-80143</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <a href="https://www.instagram.com/cauruus" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <a href="https://www.youtube.com/@esacaurus" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> | Created By Kelompok 6 |</p>
+        </div>
+    </footer>
+
+
+    <!-- javascript script file code -->
+    <script>
+        var mainImg = document.getElementById("MainImg");
+        var smallImg = document.getElementsByClassName("small-img");
+        smallImg[0].onclick = function () {
+            mainImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function () {
+            mainImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function () {
+            mainImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function () {
+            mainImg.src = smallImg[3].src;
+        }
+    </script>
+
+    <!-- javascript script file link -->
+    <script src="script.js"></script>
+</body>
+
+</html>

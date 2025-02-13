@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce website</title>
+
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Recipe</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Creations</a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="productdetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="images/products/sb.jpg" width="100%" id="MainImg" alt="">
+        </div>
+        <div class="single-pro-details">
+            <h4>Soto Betawi </h4>
+            <h4>Ingredients:</h4>
+            <span>
+                <ul>
+                    <li>1 kilogram beef shank (Indonesian: daging sengkel)</li>
+                    <li>500 gram honeycomb tripe (Indonesian: babat sapi)</li>
+                    <li>5 stalks lemongrass (Indonesian: sereh), bruised and knotted</li>
+                    <li>3 Indonesian bay leaves (Indonesian: daun salam)</li>
+                    <li>1 liter fresh milk</li>
+                    <li>1 liter water</li>
+                    <li>500 ml coconut milk</li>
+                    <li>1 tablespoon salt</li>
+                    <li>5 kaffir lime leaves (Indonesian: daun jeruk)</li>
+                    <li>100 gram shallots (Indonesian: bawang merah)</li>
+                    <li>4 cloves garlic (Indonesian: bawang putih)</li>
+                    <li>1 inch ginger (Indonesian: jahe)</li>
+                    <li>2 inch galangal (Indonesian: lengkuas)</li>
+                    <li>5 candlenut (Indonesian: kemiri)</li>
+                    <li>2 tomatoes, cut into 1/2 inch cubes</li>
+                    <li>2 potatoes, cut into 1/2 inch cubes and fried</li>
+                    <li>2 scallions, thinly sliced</li>
+                    <li>2 tablespoon deep fried shallot flakes (Indonesian: bawang goreng)</li>
+                    <li>emping (a.k.a. melinjo crackers)</li>
+                    <li>10 kaffir limes (or about 3 regular limes)</li>
+                    <li>sweet soy sauce (Indonesian: kecap manis)</li>
+                    <li>steamed white rice</li>
+                    <li>acar (Indonesian pickle)</li>
+                </ul>
+            </span>
+            <h4>How To Make:</h4><span>
+                <ol>
+                    <li>Boil together beef shank, honeycomb tripe, lemongrass, daun salam (Indonesian bay leaves), milk,
+                        and spice paste over medium high heat in a soup pot. Once it reaches a rolling boil, reduce the
+                        heat to a simmer, cover the pot, and continue cooking until the meat and tripe are tender, about
+                        2 hours.<p>
+                            <strong>TIPS:</strong> If using a pressure cooker, this step will only take 30 minutes.
+                    </li>
+                    <li>Remove the meat and tripe from the pot to cool. Once they are cool enough to handle, cut into
+                        bite-size pieces, about 1/2 inch cubes.</li>
+                    <li>Optional step: Strain the soup to remove any impurities and scums to get a clear soup, then
+                        return the strained soup to the soup pot.</li>
+                    <li>Return the pieces of meat and tripe into the pot, add water, coconut milk, salt, and bring to a
+                        boil. Reduce heat and simmer for another 30 minutes.</li>
+                    <li>Turn off the heat, discard the lemongrass and bay leaves. Stir in kaffir lime leaves.</li>
+                    <li>Serve the soup (soto) in soup bowls. Garnish each bowl with tomato and fried potato cubes, and
+                        top with sliced scallions, shallot flakes, and emping. Let each person add as much lime juice
+                        and sweet soy sauce to their soup.
+                        The soup (soto) is traditionally eaten with steamed white rice and a side of acar.</li>
+                </ol>
+            </span>
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="images/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> SMAN 10 DEPOK</p>
+            <p><strong>Phone:</strong> +62 895-3526-80143</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <a href="https://www.instagram.com/cauruus" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <a href="https://www.youtube.com/@esacaurus" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> | Created By Kelompok 6 |</p>
+        </div>
+    </footer>
+
+
+    <!-- javascript script file code -->
+    <script>
+        var mainImg = document.getElementById("MainImg");
+        var smallImg = document.getElementsByClassName("small-img");
+        smallImg[0].onclick = function () {
+            mainImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function () {
+            mainImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function () {
+            mainImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function () {
+            mainImg.src = smallImg[3].src;
+        }
+    </script>
+
+    <!-- javascript script file link -->
+    <script src="script.js"></script>
+</body>
+
+</html>
